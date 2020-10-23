@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangles - CSS puro </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="content">
+        <div id="triangle-2" class=""></div>
+        <button class="button" onclick="alterarClass('all', 'triangle-2')">Completo</button>
+        <button class="button" onclick="alterarClass('psi', 'triangle-2')">Psicodélico</button>
+        <button class="button" onclick="alterarClass('clear', 'triangle-2')">Apagar</button>
+    </div>
+    <div class="content">
+        <div id="triangle" class=""></div>
+        <button class="button" id="top" onclick="alterarClass('top', 'triangle')">Em cima</button>
+        <button class="button" id="right" onclick="alterarClass('right', 'triangle')">Direita</button>
+        <button class="button" id="left" onclick="alterarClass('left', 'triangle')">Esquerda</button>
+        <button class="button" id="bottom" onclick="alterarClass('bottom', 'triangle')">Embaixo</button>
+        <button class="button" id="all" onclick="alterarClass('all', 'triangle')">Inicial</button>
+    </div>
+</body>
+<script>
+    function alterarClass(tipo, id){
+        if(tipo == 'top'){
+            document.getElementById(id).className = 'triangle-top';
+        }
+
+        if(tipo == 'right'){
+            document.getElementById(id).className = 'triangle-right';
+        }
+
+        if(tipo == 'left'){
+            document.getElementById(id).className = 'triangle-left';
+        }
+
+        if(tipo == 'bottom'){
+            document.getElementById(id).className = 'triangle-bottom';
+        }
+        if(tipo == 'all'){
+            document.getElementById(id).className = 'triangle';
+        }
+
+        if(tipo == 'clear'){
+            document.getElementById(id).className = '';
+        }
+
+        if(tipo == 'psi'){
+            document.getElementById(id).className = 'triangle-psi';
+        }
+
+    }
+</script>
+</html>

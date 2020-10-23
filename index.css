@@ -1,0 +1,125 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: antiquewhite;
+}
+
+.content{
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+    border: white 1px solid;
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: crimson;
+    border-left-color: cornflowerblue;
+    border-right-color: goldenrod;
+    border-bottom-color: blueviolet;
+    transition: 5s;
+}
+
+.triangle-psi {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    transition: 5s;
+    animation: psi 1s infinite;
+}
+
+.triangle-top {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: crimson;
+    transition: 3s;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-left-color: cornflowerblue;
+    transition: 3s;
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-right-color: goldenrod;
+    transition: 3s;
+}
+
+.triangle-bottom {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-bottom-color: blueviolet;
+    transition: 3s;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:focus {
+    display:block;
+    outline:none;
+}
+
+@keyframes psi {
+    0%,
+    100% {
+        border-top-color: crimson;
+        border-left-color: antiquewhite;
+        border-right-color: antiquewhite;
+        border-bottom-color: antiquewhite;
+    }
+
+    75% {
+        border-top-color: antiquewhite;
+        border-left-color: cornflowerblue;
+        border-right-color: antiquewhite;
+        border-bottom-color: antiquewhite;
+    }
+
+    50% {
+        border-top-color: antiquewhite;
+        border-left-color: antiquewhite;
+        border-right-color: antiquewhite;
+        border-bottom-color: blueviolet;
+    }
+
+    25% {
+        border-top-color: antiquewhite;
+        border-left-color: antiquewhite;
+        border-right-color: goldenrod;
+        border-bottom-color: antiquewhite;
+    }
+}
+
+
